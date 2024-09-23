@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Search Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linear Search Visualization</h1>
+
+      <div class="input-section">
+        <label for="arrayInput">Array (comma-separated values):</label>
+        <input
+          type="text"
+          id="arrayInput"
+          placeholder="Enter numbers like 4,7,2,8,1"
+        />
+
+        <label for="searchValue">Search Value:</label>
+        <input
+          type="number"
+          id="searchValue"
+          placeholder="Enter value to search"
+        />
+
+        <button onclick="startLinearSearch()">Start Linear Search</button>
+      </div>
+
+      <div class="table-section">
+        <table id="arrayTable"></table>
+      </div>
+
+      <div class="result-section">
+        <h2>Result</h2>
+        <p id="searchResult"></p>
+        <p id="timer"></p>
+      </div>
+
+      <div class="complexity-section">
+        <h2>Complexity</h2>
+        <p id="timeComplexity"></p>
+        <p id="spaceComplexity"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
